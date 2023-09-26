@@ -1,0 +1,12 @@
+.line {
+    height: 4px;
+    width: 75px;
+    background-color: white;
+}
+
+section {
+    background-color: #1abc9c;
+}
+.space {
+    height: 100px;
+}

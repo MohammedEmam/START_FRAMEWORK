@@ -1,0 +1,51 @@
+.divColor {
+    color: rgb(44, 62, 80);
+}
+.divbgColor {
+    background-color: rgb(44, 62, 80);
+
+}
+.line {
+    height: 4px;
+    width: 75px;
+    background-color: rgb(44, 62, 80);
+}
+
+.inner {
+position: relative;
+border-radius: 10px;
+overflow: hidden;
+}
+
+.inner:hover .layer {
+    opacity: 1;
+}
+
+.layer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: #1abc9ce6;
+    opacity: 0;
+    cursor: pointer;
+    transition: .6s opacity;
+    top: 0;
+    bottom: 0;
+}
+
+.mainLayer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(47, 39, 204, 0.397);
+    z-index: 9999999999;
+
+}

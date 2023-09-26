@@ -1,0 +1,31 @@
+<section class="my-5 pt-5">
+  <div class="text-center mt-5 pt-4 divColor">
+    <h2 class="text-uppercase mb-3 fs-1 fw-bolder">PORTFOLIO COMPONENT</h2>
+    <div class="d-flex align-items-center justify-content-center mb-3">
+      <div class="me-3 divbgColor line"></div>
+      <i class="fa-solid fa-star"></i>
+      <div class="ms-3 divbgColor line"></div>
+    </div>
+  </div>
+  <div class="container my">
+    <div class="row g-5">
+      <div *ngFor="let img of listImg" class="col-md-4">
+        <div (click)="clicked(img)" class="inner">
+          <div>
+            <img class="w-100" src="{{ img }}" alt="" />
+          </div>
+          <div class="w-100 layer">
+            <i
+              _ngcontent-ayn-c19=""
+              class="text-white fa-solid fa-plus fa-6x"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="LayerNone" (click)="displaynone()"  class="mainLayer">
+  <img class="w-50" [src]="mainImgLayer" alt="" />
+</div>
